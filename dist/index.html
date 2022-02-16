@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Home</title>
+</head>
+<body>
+	
+	<div class="page">
+
+		<!--Header-->
+		<header class="header">
+			<div class="header__left">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link" href="index.html">Главная</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link has-subnav" href="#">Статьи</a>
+						<ul class="subnav">
+							<li class="subnav__item">
+								<a class="nav__link subnav__link" href="#">Создание сайтов</a>
+							</li>
+							<li class="subnav__item">
+								<a class="nav__link subnav__link" href="#">Интернет маркетинг</a>
+							</li>
+							<li class="subnav__item">
+								<a class="nav__link subnav__link" href="#">Продвижение видео</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Обо мне</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Реклама</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__right">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link" href="#">Профиль</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Выйти</a>
+					</li>
+				</ul>
+				<form class="search" action="/" method="post">
+					<input class="search__input" type="text" placeholder="поиск по блогу"/>
+				</form>
+			</div>
+		</header>
+
+		<!--Sidebar-->
+		<aside class="sidebar">
+			<div class="sidebar__header">
+				<img class="sidebar__header__img" src="assets/images/sidebar/SidebarHeaderImg.jpg" alt="background" />
+			</div>
+		
+			<div class="sidebar__content">
+				<div class="profile">
+					<img class="profile__avatar" src="assets/images/sidebar/photo.jpg" height="10px" alt="background" />
+					<div class="profile__name">Толубаря Наталия</div>
+					<div class="profile__prof">front-end developer</div>
+					<ul class="social">
+						<li class="social__item">
+							<a class="social__link" href="#" target="_blank">
+								<div class="faLink"><i class="fab fa-linkedin-in"></i></div>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#" target="_blank">
+								<i class="fab fa-gitlab"></i>
+							</a>
+						</li>
+					</ul>
+		
+					<div class="profile__text">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+							Aliquam quam illum ipsam, eveniet reprehenderit, quas officia molestias 
+							provident commodi quia enim quaerat velit ex nemo. Vel odio quia quae iste.
+						</p>
+					</div>
+				</div><!--/Profile-->
+			</div><!--/Sidebar__content-->
+		
+			<div class="sidebar__footer">
+				<a class="btn btn__work" href="">Мои работы</a>
+				<button class="btn btn__write" type="button">Написать мне</button>
+			</div>
+		</aside>
+
+		<!--Main-->
+		<main class="main">
+			<div class="container">
+				<main class="main">
+					<!-- Stories -->
+					<div class="stories">
+						<div class="stories__item">
+							<img class="stories__preview" src="./assets/images/stories/road.jpg" alt="road">
+							<span class="stories__title">cccccccccccccccccc</span>
+							<time class="stories__date" datetime="22/09/2020 9:00">22/09/2020</time>
+						</div>
+						<div class="stories__item">
+							<img class="stories__preview" src="./assets/images/stories/nature.jpg" alt="nature">
+							<span class="stories__title">cccccccccccccccccc</span>
+							<time class="stories__date" datetime="22/09/2020 9:00">22/09/2020</time>
+						</div>
+						<div class="stories__item">
+							<img class="stories__preview" src="./assets/images/stories/road.jpg" alt="road">
+							<span class="stories__title">cccccccccccccccccc</span>
+							<time class="stories__date" datetime="22/09/2020 9:00">22/09/2020</time>
+						</div>
+						<div class="stories__item">
+							<img class="stories__preview" src="./assets/images/stories/nature.jpg" alt="road">
+							<span class="stories__title">cccccccccccccccccc</span>
+							<time class="stories__date" datetime="22/09/2020 9:00">22/09/2020</time>
+					</div>
+					</div>
+					<!-- /Stories -->
+				
+					<!-- Add post -->
+					<div class="add-posts">
+						<form class="add-posts__form" action="/" method="post">
+							<textarea class="add-posts__textarea" name="post-text" cols="30" rows="1" placeholder="Напишите что нибудь"></textarea>
+							<div class="add-posts__form-actions">
+								<label class="add-posts__file" for="">
+									<!-- <input class="" type="file" id="add-posts-file"> -->
+									<i class="fa fa-camera"></i>
+									
+								</label>
+								<button class="add-posts__btn" type="submit">
+									<i class="fa fa-location-arrow fa-arrow"></i>
+								</button>
+							</div>
+						</form>
+					</div>
+					<!-- /Add post -->
+				
+					<div class="post">
+						<div class="post__content">
+							<div class="post__description">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+								Voluptate laboriosam eius neque earum. Tempora quae, 
+								sint eligendi porro veritatis maxime autem aspernatur 
+								commodi consequuntur vitae consequatur consectetur harum? 
+								Nostrum, quis!
+							</div>
+						</div>
+				
+						<div class="post__footer">
+							<ul class="post__data">
+								<li class="post__data-item">
+									<time datetime="21/06/2022 19:20">21/06/2022</time>
+								</li>
+							</ul>
+						</div>
+					</div><!-- /post -->
+				
+					<article class="post">
+						<div class="post__header post__header--preview">
+							<a href="post.html">
+								<img class="post__preview" src="assets/images/posts/post-2.png" alt="Как писать код быстро и безболезненно?">
+							</a>
+						</div>
+						<div class="post__content">
+							<h2 class="post__title">
+								<a class="" href="post.html">
+									Как писать код быстро и безболезненно?
+								</a>
+							</h2>
+							<div class="post__description">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+								Voluptate laboriosam eius neque earum. Tempora quae, 
+								sint eligendi porro veritatis maxime autem aspernatur 
+								commodi consequuntur vitae consequatur consectetur harum? 
+								Nostrum, quis!
+							</div>
+						</div>
+				
+						<div class="post__footer">
+							<ul class="post__data">
+								<li class="post__data-item">
+									<time datetime="21/06/2022 19:20">21/06/2022</time>
+								</li>
+								<li class="post__data-item">
+									<a class="" href="#">
+										Создание сайтов
+									</a>
+								</li>
+							</ul>
+							<a class="post__read" href="post.html">
+								читать
+							</a>
+						</div>
+					</article><!-- /post -->
+				
+					<article class="post">
+						<div class="post__header">
+							<div class="embed">
+								<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+							</div>
+						</div>
+						<div class="post__content">
+							<h2 class="post__title">
+								<a class="" href="post.html">
+									Покупка нового гаджета
+								</a>
+							</h2>
+						</div>
+				
+						<div class="post__footer">
+							<ul class="post__data">
+								<li class="post__data-item">
+									<time datetime="21/06/2022 19:20">21/06/2022</time>
+								</li>
+								<li class="post__data-item">
+									<a class="" href="#">
+										Продвижение видео
+									</a>
+								</li>
+							</ul>
+							<a class="post__read" href="#">
+								оставить коментарий
+							</a>
+						</div>
+					</article><!-- /post -->
+				
+					<article class="post">
+						<div class="post__header post__header--preview">
+							<a href="#">
+								<img class="post__preview" src="assets/images/posts/coworking.jpg" alt="Как ходили на frontend coft 2021">
+							</a>
+						</div>
+						<div class="post__content">
+							<h2 class="post__title">
+								<a class="" href="#">
+									Как ходили на frontend coft 2021
+								</a>
+							</h2>
+							<div class="post__description">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+								Voluptate laboriosam eius neque earum. Tempora quae, 
+								sint eligendi porro veritatis maxime autem aspernatur 
+								commodi consequuntur vitae consequatur consectetur harum? 
+								Nostrum, quis!
+							</div>
+						</div>
+				
+						<div class="post__footer">
+							<ul class="post__data">
+								<li class="post__data-item">
+									<time datetime="21/06/2022 19:20">21/06/2021</time>
+								</li>
+								<li class="post__data-item">
+									<a class="" href="#">
+										Конференции
+									</a>
+								</li>
+							</ul>
+							<a class="post__read" href="#">
+								читать
+							</a>
+						</div>
+					</article><!-- /post -->
+				
+					<!--pagination-->
+					<div class="pagination">
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">&lt;</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link active" href="#">1</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">2</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">3</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">&gt;</a>
+						</li>
+					</div>
+				</main>
+				
+				
+			</div>	
+		</main>
+
+	</div>
+
+   <script src="assets/js/app.js"></script>
+</body>
+</html>

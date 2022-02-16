@@ -1,0 +1,15 @@
+.subnav {
+	width: 16.5rem;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	border-radius: 15px;
+	&__item {
+		background-color: $btnWrite;
+	}
+	&__link {
+		font-size: 1rem;
+		transition: bacgraund-color .2s ease-in-out;
+	}
+}

@@ -1,0 +1,56 @@
+.comments {
+	margin-top: 5rem;
+	&__item {
+		padding-bottom: 3rem;
+
+		> .comments {
+			margin-top: 3rem;
+			padding-left: 3rem;
+		}
+	}
+	&__header {
+		display: flex;
+		margin-bottom: 1.5rem;
+	}
+	&__avatar {
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+	}
+	&__author {
+		flex-grow: 1;
+		padding-left: 1.5rem;
+		font-size: 1.2rem;
+		line-height: 1.4;
+	}
+	&__name {
+		color: $textColorPrimary;
+		font-weight: 500;
+	}
+	&__pubdate {
+		color: #757575;
+	}
+	&__text {
+		margin-bottom: 1rem;
+
+		font-size: 1.2rem;
+		line-height: 1.3;
+		color: $textColorPrimary;
+	}
+	&__reply {
+		padding: 0;
+
+		background: none;
+		border: none;
+		cursor: pointer;
+
+		font-family: inherit;
+		font-size: 1.2rem;
+		line-height: 1.1;
+		color: $btnWrite;
+
+		&:hover {
+
+		}
+	}
+}

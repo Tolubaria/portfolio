@@ -1,0 +1,19 @@
+.header {
+	width: calc(100% - $sidebar-width);
+	
+	display: flex;
+	background-color: #777777;
+	
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: $z-index;
+	&__left {
+		width: 60%;
+	}
+	&__right {
+		width: 40%;
+		display: flex;
+		justify-content: flex-end;
+	}
+}

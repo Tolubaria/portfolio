@@ -1,0 +1,145 @@
+.post {
+	padding: 2.5rem;
+	margin-bottom: 3rem;
+
+	overflow: hidden;
+	background-color: $primary;
+	box-shadow: 0 15px 25px rgba(#642d2d, .35);
+	border-radius: 5px;
+	&__preview {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	&__header {
+		margin: 0 0 2.5rem;
+		&--preview {
+			margin: -2.5rem -2.5rem 2.5rem;
+		}
+	}
+	&__content {
+		margin-bottom: 2rem;
+	}
+	&__subtitle {
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+		font-size: 1.6rem;
+		color: $textColorPrimary;
+		font-weight: 500;
+	}
+	&__title {
+		margin-bottom: 1.5rem;
+		font-size: 1.8rem;
+		color: $textColorPrimary;
+		font-weight: 500;
+		a {
+			color: inherit;
+		}
+	}
+	&__description {
+		font-size: 1.4rem;
+		color: #D2D2D2;
+		line-height: 2rem;
+	}
+	&__text {
+		padding-bottom: 1rem;
+		font-size: 1.4rem;
+		color: $textColorPrimary;
+
+		border-bottom: 1px solid #c4c4c4;
+
+		h2, h3, h4, h5, h6 {
+			margin-bottom: 2rem;
+			font-weight: 700;
+		}
+			h2 {
+			font-size: 1.5em;
+		}
+			h3 {
+				font-size: 1.25em;
+			}
+			h4 {
+				font-size: 1.15em;
+			}
+			h5, h6 {
+				font-size: 1em;
+			}
+
+			ul, ol {
+				margin-bottom: 2rem;
+			}
+			ol {
+				list-style: decimal;
+				list-style-position: inside;
+			}
+
+			table {
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+			a {
+				color: $btnWrite;
+			}
+
+		p {
+			margin-bottom: 2.5rem;
+		}
+	}
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__data {
+		display: flex;
+		line-height: 1.2rem;
+		color: #828282;
+		a {
+			color: inherit;
+		}
+		&--mb0 {
+			margin-bottom: 0;
+		}
+	}
+	&__data-item {
+		&:not(:last-child):after {
+			position: relative;
+			content: "";
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+			top: -2px;
+			margin: 0 1.5rem;
+			border-radius: 50%;
+			background-color: #c4c4c4;
+		}
+	}
+	&__read {
+		font-size: 1.4rem;
+		color: #107ef1;
+	}
+	&__actions {
+		margin-bottom: 1.5rem;
+		display: flex;
+		justify-content: space-between;
+
+		font-size: 1.2rem;
+		color: rgba($textColorPrimary, 60%);
+		a {
+			color: inherit;
+			opacity: 0.6;
+			transition: opacity 1s linear;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.fa-share {
+	margin-left: 0.5rem;
+}

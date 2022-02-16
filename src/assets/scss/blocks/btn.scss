@@ -1,0 +1,41 @@
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 1.12em 2.1em;
+
+	background-color: $secondary;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 3em;
+
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.1;
+	font-family: inherit;
+	color: $textColorPrimary;
+
+	&__work {
+		background-color: $btnWork;
+		&:hover {
+			text-decoration: none;
+		}
+		// box-shadow: 0 7px 17px -10px rgba($btnWork .3);
+	}
+	&__work:hover {
+		background-color: rgb(122, 20, 20);;
+		transition: 2s;
+	}
+	&__write {
+		background-color: $btnWrite;
+		// box-shadow: 0 7px 17px -10px rgba($btnWrite .3);
+	}
+	&__write:hover {
+		background-color: rgb(37, 25, 94);
+		transition: 1s;
+	}
+	&__rounded {
+		border-radius: 0.41em;
+		padding: 0.66em 1.25em;
+	}
+}
