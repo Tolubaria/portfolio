@@ -19,6 +19,9 @@ a {
 				text-decoration: underline;
 			}
 }
+.no-scroll {
+	overflow: hidden;
+}
 
 //import scss block for file//
 
@@ -41,6 +44,8 @@ a {
 @import "blocks/form";
 @import "blocks/work";
 @import "blocks/tags";
+@import "blocks/cabinet";
+@import "blocks/modal";
 
 @import "blocks/profile";
 @import "blocks/social";

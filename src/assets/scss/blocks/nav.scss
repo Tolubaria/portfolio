@@ -18,14 +18,11 @@
 		line-height: 2rem;
 		color: $textColorPrimary;
 		padding: 1.2rem 2rem;
-		// border-radius: 15px;
+		border-radius: 15px 0px;
 		&:hover {
 			background-color: $btnWrite;
 			text-decoration: none;
-			// transition: bacgraund-color 2s linear;
-			transition: 2s;
 		}
-
 	}
 }
 
