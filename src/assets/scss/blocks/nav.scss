@@ -1,6 +1,9 @@
 .nav {
 	&__list {
-		display: flex;	
+		display: flex;
+		@include breakepoint ($tablet-bp) {
+			display: none;
+		}
 	}
 	&__item {
 		position: relative;

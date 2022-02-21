@@ -10,6 +10,14 @@
 	left: 0;
 	z-index: $z-index;
 
+	@include breakepoint ($tablet-bp) {
+		display: none;
+
+		.shov-sidebar & {
+			display: block;
+		}
+	}
+
 	&__header {
 		height: 180px;
 		background-color: $primary;

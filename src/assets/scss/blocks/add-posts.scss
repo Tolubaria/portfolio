@@ -8,6 +8,7 @@
 	&__form {
 		display: flex;
 		align-items: center;
+
 		input {
 			padding-top: 10px;
 			// display: none;
@@ -16,7 +17,7 @@
 	}
 	&__textarea {
 		display: block;
-		width: 85%;
+		flex-grow: 1;
 		height: 26px;
 		font-size: 1.5rem;
 		color: $textColorPrimary;
@@ -30,7 +31,8 @@
 		}
 	}
 	&__form-actions {
-		width: 15%;
+		width: 100px;
+		flex-shrink: 0;
 		display: flex;
 		justify-content: space-between;
 	}

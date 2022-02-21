@@ -1,5 +1,8 @@
 @import "_vars";
+@import "mixins";
 @import "vendor/reset";
+
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:ital,wght@0,700;1,400&family=Work+Sans:wght@400;500&display=swap');
 
 HTML {
 	font-size: 62.5%;
@@ -29,6 +32,7 @@ a {
 @import "blocks/header";
 @import "blocks/nav";
 @import "blocks/subnav";
+@import "blocks/burger";
 @import "blocks/search";
 @import "blocks/sidebar";
 @import "blocks/main";

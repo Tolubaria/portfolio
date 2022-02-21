@@ -10,10 +10,21 @@
 	z-index: $z-index;
 	&__left {
 		width: 60%;
+		@include breakepoint ($tablet-bp) {
+			width: 40%;
+		}
 	}
 	&__right {
 		width: 40%;
 		display: flex;
 		justify-content: flex-end;
+		@include breakepoint ($tablet-bp) {
+			width: 60%;
+		}
 	}
+
+	@include breakepoint ($tablet-bp) {
+		width: 100%;
+	}
+	
 }

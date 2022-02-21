@@ -1,4 +1,8 @@
 .main {
 	padding: 10rem 0 8rem;
 	padding-left: $sidebar-width;
+
+	@include breakepoint ($tablet-bp) {
+		padding-left: 0;
+	}
 }
