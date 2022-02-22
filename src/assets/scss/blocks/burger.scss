@@ -53,14 +53,14 @@
 	.open-navigation {
 		opacity: 0;
 	}
-	&::before,
-	&::after {
-		top: 50%
-	}
 	&::before {
 		transform: rotate(45deg);
 	}
 	&::after {
 		transform: rotate(-45deg);
+	}
+	&::before,
+	&::after {
+		top: 50%
 	}
 }

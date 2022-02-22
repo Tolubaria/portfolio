@@ -26,10 +26,10 @@
 		}
 	}
 
-	@include breakepoint ($small-bp) {
-		position: relative;
-		width: 100%;
-	}
+	// @include breakepoint ($small-bp) {
+	// 	position: relative;
+	// 	width: 100%;
+	// }
 
 	&__header {
 		height: 180px;
