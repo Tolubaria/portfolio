@@ -12,6 +12,7 @@
 
 	@include breakepoint ($tablet-bp) {
 		width: 18rem;
+		top: 4rem;
 	}
 
 	@include breakepoint ($small-bp) {
