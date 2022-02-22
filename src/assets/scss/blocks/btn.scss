@@ -15,6 +15,10 @@
 	font-family: inherit;
 	color: $textColorPrimary;
 
+	@include breakepoint ($tablet-bp) {
+		margin-bottom: 1rem;
+	}
+
 	&__work {
 		background-color: $btnWork;
 		&:hover {

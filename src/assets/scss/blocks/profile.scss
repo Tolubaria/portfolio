@@ -9,10 +9,32 @@
 		// border: 2px solid $white;
 		box-shadow: 0 7px 20px rgba(0, 0, 0, .25);
 		border-radius: 50%;
+
+		@include breakepoint ($small-bp) {
+			width: 6.5rem;
+			height: 6.5rem;
+			margin-top: -7%;
+			margin-left: 0;
+		}
+	}
+	&__info {
+		@include breakepoint ($small-bp) {
+			display: flex;
+		
+		}
+	}
+	&__cover {
+		@include breakepoint ($small-bp) {
+			
+		}
 	}
 	&__name {
 		font-size: 1.8rem;
 		text-align: center;
+		@include breakepoint ($small-bp) {
+			margin-top: 0.7rem;
+			font-size: 1.5rem;
+		}
 	}
 	&__prof {
 		margin-bottom: 2rem;

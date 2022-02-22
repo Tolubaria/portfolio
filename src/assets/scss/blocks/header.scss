@@ -8,6 +8,15 @@
 	top: 0;
 	right: 0;
 	z-index: $z-index;
+
+	@include breakepoint ($tablet-bp) {
+		width: 100%;
+	}
+
+	@include breakepoint ($small-bp) {
+		position: relative;
+	}
+
 	&__left {
 		width: 60%;
 		@include breakepoint ($tablet-bp) {

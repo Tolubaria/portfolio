@@ -3,6 +3,9 @@
 	padding-left: $sidebar-width;
 
 	@include breakepoint ($tablet-bp) {
-		padding-left: 0;
+		padding-left: 18rem;
+	}
+	@include breakepoint ($small-bp) {
+		padding-left: 0rem;
 	}
 }
