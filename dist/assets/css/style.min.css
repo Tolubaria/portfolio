@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -531,12 +532,25 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none;
+  }
+}
+.nav--mobile {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .nav--mobile {
+    display: block;
+  }
+}
 .nav__list {
   display: flex;
 }
 @media screen and (max-width: 992px) {
   .nav__list {
-    display: none;
+    flex-direction: column;
   }
 }
 .nav__item {
@@ -581,14 +595,24 @@ a:hover {
   position: absolute;
   top: 100%;
   left: 0;
-  border-radius: 15px;
+  border-radius: 0 0 5px;
+  box-shadow: 0 6px 8px rgba(18, 18, 18, 0.2);
+}
+@media screen and (max-width: 992px) {
+  .subnav {
+    width: 100%;
+    position: static;
+    padding-left: 2rem;
+    background-color: none;
+    box-shadow: none;
+  }
 }
 .subnav__item {
   background-color: #300ccf;
 }
 .subnav__link {
   font-size: 1rem;
-  transition: bacgraund-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .burger {
@@ -611,7 +635,7 @@ a:hover {
   }
 }
 .burger::before, .burger::after,
-.burger span {
+.burger .open-navigation {
   display: block;
   width: 100%;
   height: 2px;
@@ -623,7 +647,7 @@ a:hover {
   content: "";
   transition: opacity 0.2s linear;
 }
-.burger span {
+.burger .open-navigation {
   top: 50%;
   transform: translateY(-50%);
   transition: opacity 0.2s linear;
@@ -635,7 +659,7 @@ a:hover {
   bottom: 0;
 }
 
-.shov-sidebar span {
+.shov-sidebar .open-navigation {
   opacity: 0;
 }
 .shov-sidebar::before, .shov-sidebar::after {
@@ -679,8 +703,13 @@ a:hover {
 }
 @media screen and (max-width: 992px) {
   .sidebar {
-    width: 18rem;
     top: 4rem;
+    height: calc(100vh - 4rem);
+    transform: translateХ(-100%);
+    transition: transform 0.2s linear;
+  }
+  .shov-sidebar .sidebar {
+    transform: translateX(0);
   }
 }
 @media screen and (max-width: 576px) {
@@ -708,14 +737,10 @@ a:hover {
 }
 @media screen and (max-width: 992px) {
   .sidebar__footer {
-    display: block;
-  }
-}
-@media screen and (max-width: 576px) {
-  .sidebar__footer {
     margin: 0 auto;
     max-width: 40rem;
     display: flex;
+    padding: 0 15px;
   }
 }
 
@@ -1349,24 +1374,26 @@ a:hover {
   box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .profile__avatar {
     width: 6.5rem;
     height: 6.5rem;
     margin-top: -7%;
     margin-left: 0;
+    margin-right: 1rem;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .profile__info {
     display: flex;
+    justify-content: left;
   }
 }
 .profile__name {
   font-size: 1.8rem;
   text-align: center;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .profile__name {
     margin-top: 0.7rem;
     font-size: 1.5rem;
@@ -1386,6 +1413,11 @@ a:hover {
   text-align: center;
   border-top: 1px solid #1d1d1d;
   border-bottom: 1px solid #1d1d1d;
+}
+@media screen and (max-width: 992px) {
+  .profile__text {
+    display: none;
+  }
 }
 
 .fab {
@@ -1423,6 +1455,11 @@ a:hover {
 .social {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .social {
+    display: none;
+  }
 }
 .social__item {
   margin: 0 0.75rem;
