@@ -5,6 +5,7 @@
 	top: 100%;
 	left: 0;
 	border-radius: 0 0 5px;
+	background-color: $btnWrite;
 
 	box-shadow: 0 6px 8px rgba($secondary, .2);
 
@@ -14,14 +15,17 @@
 
 		padding-left: 2rem;
 
-		background-color: none;
+		background-color: transparent;
 		box-shadow: none;
 	}
 	&__item {
-		background-color: $btnWrite;
+		
 	}
 	&__link {
 		font-size: 1rem;
 		transition: background-color .2s ease-in-out;
+			@include breakepoint ($tablet-bp) {
+				font-size: 1.4rem;
+			}
 	}
 }

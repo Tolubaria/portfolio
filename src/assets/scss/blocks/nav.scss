@@ -6,6 +6,7 @@
 		display: none;
 		@include breakepoint ($tablet-bp) {
 			display: block;
+			margin: 3rem 0;
 		}
 	}
 	&__list {
@@ -33,9 +34,17 @@
 		color: $textColorPrimary;
 		padding: 1.2rem 2rem;
 		border-radius: 15px 0px;
+
+		@include breakepoint ($tablet-bp) {
+			font-size: 1.6rem;
+		} 
 		&:hover {
 			background-color: $btnWrite;
 			text-decoration: none;
+
+			@include breakepoint ($tablet-bp) {
+				background-color: transparent;
+			}
 		}
 	}
 }
