@@ -684,14 +684,14 @@ a:hover {
 .shov-sidebar .open-navigation {
   opacity: 0;
 }
-.shov-sidebar::before, .shov-sidebar::after {
-  top: 50%;
-}
 .shov-sidebar::before {
   transform: rotate(45deg);
 }
 .shov-sidebar::after {
   transform: rotate(-45deg);
+}
+.shov-sidebar::before, .shov-sidebar::after {
+  top: 50%;
 }
 
 .search {
@@ -735,12 +735,6 @@ a:hover {
   }
   .shov-sidebar .sidebar {
     transform: translateX(0);
-  }
-}
-@media screen and (max-width: 576px) {
-  .sidebar {
-    position: relative;
-    width: 100%;
   }
 }
 .sidebar__header {

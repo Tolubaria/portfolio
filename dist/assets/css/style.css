@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -455,17 +454,16 @@ body {
     color: white;
 }
 
+body.no-scroll, body.shov-sidebar {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-.no-scroll,
-.shov-sidebar {
-    overflow: hidden;
 }
 
 .page {
@@ -479,9 +477,21 @@ a:hover {
     overflow: hidden;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     .page {
+        position: relative;
+    }
+
+    .page::after {
+        content: "";
         display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(18, 18, 18, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
     }
 }
 
@@ -557,6 +567,7 @@ a:hover {
 @media screen and (max-width: 992px) {
     .nav--mobile {
         display: block;
+        margin: 3rem 0;
     }
 }
 
@@ -591,9 +602,21 @@ a:hover {
     border-radius: 15px 0px;
 }
 
+@media screen and (max-width: 992px) {
+    .nav__link {
+        font-size: 1.6rem;
+    }
+}
+
 .nav__link:hover {
     background-color: #300ccf;
     text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    .nav__link:hover {
+        background-color: transparent;
+    }
 }
 
 .has-subnav {
@@ -620,6 +643,7 @@ a:hover {
     top: 100%;
     left: 0;
     border-radius: 0 0 5px;
+    background-color: #300ccf;
     box-shadow: 0 6px 8px rgba(18, 18, 18, 0.2);
 }
 
@@ -628,18 +652,20 @@ a:hover {
         width: 100%;
         position: static;
         padding-left: 2rem;
-        background-color: none;
+        background-color: transparent;
         box-shadow: none;
     }
-}
-
-.subnav__item {
-    background-color: #300ccf;
 }
 
 .subnav__link {
     font-size: 1rem;
     transition: background-color 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+    .subnav__link {
+        font-size: 1.4rem;
+    }
 }
 
 .burger {
@@ -764,8 +790,13 @@ a:hover {
     .sidebar {
         top: 4rem;
         height: calc(100vh - 4rem);
-        -webkit-transform: translateХ(-100%);
-        transform: translateХ(-100%);
+        overflow: auto;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
         transition: -webkit-transform 0.2s linear;
         transition: transform 0.2s linear;
         transition: transform 0.2s linear, -webkit-transform 0.2s linear;
@@ -774,13 +805,6 @@ a:hover {
     .shov-sidebar .sidebar {
         -webkit-transform: translateX(0);
         transform: translateX(0);
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .sidebar {
-        position: relative;
-        width: 100%;
     }
 }
 
@@ -800,6 +824,13 @@ a:hover {
     margin: 0 2rem;
 }
 
+@media screen and (max-width: 992px) {
+    .sidebar__content {
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+}
+
 .sidebar__footer {
     display: -ms-flexbox;
     display: flex;
@@ -814,7 +845,7 @@ a:hover {
         max-width: 40rem;
         display: -ms-flexbox;
         display: flex;
-        padding: 0 15px;
+        padding: 0.5rem;
     }
 }
 
@@ -1638,6 +1669,7 @@ a:hover {
         display: flex;
         -ms-flex-pack: left;
         justify-content: left;
+        border-bottom: 1px solid #e68a13;
     }
 }
 
