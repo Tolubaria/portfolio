@@ -1,6 +1,9 @@
 .social {
 	display: flex;
 	justify-content: center;
+	@include breakepoint ($tablet-bp) {
+		display: none;
+	}
 	&__item {
 		margin: 0 0.75rem;
 	}

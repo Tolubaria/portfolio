@@ -1,10 +1,21 @@
 .nav {
-	&__list {
-		display: flex;
+	@include breakepoint ($tablet-bp) {
+		display: none;
+	}
+	&--mobile {
+		display: none;
 		@include breakepoint ($tablet-bp) {
-			display: none;
+			display: block;
 		}
 	}
+	&__list {
+		display: flex;
+
+		@include breakepoint ($tablet-bp) {
+			flex-direction: column;
+		}
+	}
+	
 	&__item {
 		position: relative;
 		color: $textColorPrimary;
