@@ -724,10 +724,6 @@ a:hover {
     opacity: 0;
 }
 
-.shov-sidebar::before, .shov-sidebar::after {
-    top: 50%;
-}
-
 .shov-sidebar::before {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -736,6 +732,10 @@ a:hover {
 .shov-sidebar::after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+
+.shov-sidebar::before, .shov-sidebar::after {
+    top: 50%;
 }
 
 .search {

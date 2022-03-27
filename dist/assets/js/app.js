@@ -9,6 +9,16 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/assets/js/background.js":
+/*!*************************************!*\
+  !*** ./src/assets/js/background.js ***!
+  \*************************************/
+/***/ (function() {
+
+eval("let data = new Date();\nlet h = data.getHours();\nif (h >= 6 && h < 12) {\n\tdocument.write('это большой массив'); \n}\nelse if (h >= 12 && h < 18) {\n\tdocument.write('это маленький массив'); \n}\nelse if (h >= 18 && h < 23) {\n\tdocument.write('это маленький массив'); \n}\nelse {\n\tdocument.write('это маленький массив'); \n}\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/background.js?");
+
+/***/ }),
+
 /***/ "./src/assets/js/modal.js":
 /*!********************************!*\
   !*** ./src/assets/js/modal.js ***!
@@ -35,6 +45,7 @@ eval("const burger = document.getElementById('sidebarToggle');\nconst sidebar = 
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	__webpack_modules__["./src/assets/js/background.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/modal.js"]();
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/assets/js/modalNav.js"]();
